@@ -1,0 +1,135 @@
+/* Configuración general de la página*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Cabecera de la pagina */
+.header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 4px;
+}
+.header-social {
+	display: flex;
+}
+.header-social li a {
+	padding: 6px;
+	font-size: 18px;
+}
+
+/* Menú de navegación de la pagina */
+.navbar {
+	background-color: #009688;
+}
+.menu {
+	display: flex;
+	justify-content: center;
+}
+.menu li {
+	padding: 12px;
+}
+.menu li a {
+	color: white;
+	font-size: 18px;
+}
+
+.menu li:hover,
+.menu .active {
+	background-color: #00695c;
+}
+
+/* Imagen de presentación */
+
+.presentation {
+	background-image: url(https://cdn.pixabay.com/photo/2016/02/22/09/44/chess-1215079_960_720.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.presentation * {
+	margin: 40px;
+	text-shadow: 2px 1px black;
+}
+.button {
+	display: block;
+	text-align: center;
+	padding: 10px;
+	color: white;
+	background-color: #009688;
+	border-radius: 6px;
+	text-shadow: none;
+}
+
+/* estilos para el blog */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.post {
+	width: 320px;
+	height: auto;
+	border: 1px solid #363636;
+	border-radius: 6px;
+	background-color: aliceblue;
+	padding: 12px;
+	margin: 12px;
+	box-shadow: 0px 0px 4px #363636;
+}
+.post:hover {
+	box-shadow: 0px 0px 8px #363636;
+}
+.title {
+	text-align: center;
+	color: #363636;
+}
+.date {
+	text-align: end;
+}
+.thumbnail {
+	width: 100%;
+}
+.readmore {
+	color: #009688;
+}
+
+/* Estilos para los libros */
+
+.price {
+	text-align: end;
+	color: #009688;
+}
+
+/* Estilos para contacto */
+
+.contact {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+input,
+textarea {
+	width: 100%;
+}
